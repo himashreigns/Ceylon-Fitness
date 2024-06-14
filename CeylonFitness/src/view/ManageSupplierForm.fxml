@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="789.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageSupplierFormController">
+   <children>
+      <ImageView fitHeight="789.0" fitWidth="965.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Capture454545.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="104.0" prefHeight="91.0" prefWidth="424.0" text="Manage Supplier">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="37.0" layoutY="168.0" prefHeight="7.0" prefWidth="301.0" />
+      <JFXTextField fx:id="txtSupId" layoutX="37.0" layoutY="236.0" prefHeight="29.0" prefWidth="169.0" promptText="Supplier ID" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupName" layoutX="37.0" layoutY="279.0" prefHeight="29.0" prefWidth="169.0" promptText="Supplier Name" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupAddress" layoutX="37.0" layoutY="321.0" prefHeight="29.0" prefWidth="169.0" promptText="Supplier Address" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupContact" layoutX="37.0" layoutY="361.0" prefHeight="29.0" prefWidth="169.0" promptText="Supplier Contact No" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupId2" layoutX="522.0" layoutY="239.0" onAction="#searchSupOnAction" prefHeight="29.0" prefWidth="169.0" promptText="Supplier Id" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupName2" layoutX="522.0" layoutY="279.0" prefHeight="29.0" prefWidth="169.0" promptText="Supplier Name" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupAddress2" layoutX="522.0" layoutY="321.0" prefHeight="29.0" prefWidth="169.0" promptText="Supplier Address" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupContact2" layoutX="522.0" layoutY="361.0" prefHeight="29.0" prefWidth="169.0" promptText="Supplier Contact No" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="231.0" layoutY="297.0" onAction="#addSupOnAction" prefHeight="38.0" prefWidth="157.0" style="-fx-background-color: orange;" text="Add Supplier" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="727.0" layoutY="278.0" onAction="#modifySupOnAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: orange;" text="Modify Supplier" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="727.0" layoutY="331.0" onAction="#DeleteSupOnAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: orange;" text="Delete Supplier" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="819.0" layoutY="767.0" text="System Version 1.0.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="442.0" layoutY="231.0" orientation="VERTICAL" prefHeight="184.0" prefWidth="2.0" />
+      <TableView fx:id="tblManageSup" layoutX="28.0" layoutY="428.0" prefHeight="330.0" prefWidth="899.0">
+        <columns>
+          <TableColumn fx:id="colSupId" prefWidth="177.0" text="Supplier Id" />
+          <TableColumn fx:id="colSupName" prefWidth="230.0" text="Supplier Name" />
+            <TableColumn fx:id="colSupAddress" prefWidth="281.0" text="Supplier Address" />
+            <TableColumn fx:id="colSupContact" prefWidth="209.0" text="Supplier Contact No" />
+            <TableColumn prefWidth="51.0" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="-2.0" prefHeight="102.0" prefWidth="968.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="73.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/f68a249080a943372e6a234a51c8596a.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="101.0" layoutY="6.0" prefHeight="48.0" prefWidth="384.0" text="CEYLON FITNESS">
+               <font>
+                  <Font name="Jokerman" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="51.0" prefHeight="32.0" prefWidth="252.0" text="SUPPLEMENT STORE">
+               <font>
+                  <Font name="Impact" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="688.0" layoutY="112.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="735.0" layoutY="112.0" text="2022/03/07">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="831.0" layoutY="112.0" text="Time :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="880.0" layoutY="112.0" text="10:20:33">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

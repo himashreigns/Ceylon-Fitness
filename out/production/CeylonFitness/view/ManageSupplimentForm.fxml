@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="789.0" prefWidth="953.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageSupplimentFormController">
+   <children>
+      <ImageView fitHeight="789.0" fitWidth="963.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Capture454545.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="32.0" layoutY="108.0" prefHeight="91.0" prefWidth="424.0" text="Manage Supplement">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="32.0" layoutY="170.0" prefHeight="7.0" prefWidth="301.0" />
+      <JFXTextField fx:id="txtItemCode" layoutX="32.0" layoutY="207.0" prefHeight="29.0" prefWidth="169.0" promptText="Item Code" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemName" layoutX="32.0" layoutY="250.0" prefHeight="29.0" prefWidth="169.0" promptText="Name" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemDes" layoutX="32.0" layoutY="292.0" prefHeight="29.0" prefWidth="169.0" promptText="Description" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemExp" layoutX="32.0" layoutY="332.0" prefHeight="29.0" prefWidth="169.0" promptText="Expire Date" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemCode2" layoutX="517.0" layoutY="193.0" onAction="#searchItemOnAction" prefHeight="29.0" prefWidth="169.0" promptText="Item Code" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemName2" layoutX="517.0" layoutY="233.0" prefHeight="29.0" prefWidth="169.0" promptText="Name" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemDes2" layoutX="517.0" layoutY="278.0" prefHeight="29.0" prefWidth="169.0" promptText="Description" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemExp2" layoutX="517.0" layoutY="324.0" prefHeight="29.0" prefWidth="169.0" promptText="Expire Date" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="219.0" layoutY="292.0" onAction="#addItemOnAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: orange;" text="Add Item" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="722.0" layoutY="273.0" onAction="#modifyItemOnAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: orange;" text="Modify Item" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="722.0" layoutY="320.0" onAction="#deleteItemOnAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: orange;" text="Delete Item" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="835.0" layoutY="767.0" text="System Version 1.0.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemQOH" layoutX="219.0" layoutY="207.0" prefHeight="29.0" prefWidth="169.0" promptText="Qty On Hand" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemUP" layoutX="219.0" layoutY="247.0" prefHeight="29.0" prefWidth="169.0" promptText="Unit Price" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemQOH2" layoutX="722.0" layoutY="193.0" prefHeight="29.0" prefWidth="169.0" promptText="Qty On Hand" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemUP2" layoutX="722.0" layoutY="233.0" prefHeight="29.0" prefWidth="169.0" promptText="Unit Price" style="-fx-background-color: #60f7f4;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="437.0" layoutY="194.0" orientation="VERTICAL" prefHeight="184.0" prefWidth="2.0" />
+      <TableView fx:id="tblManageSupplement" layoutX="18.0" layoutY="414.0" prefHeight="344.0" prefWidth="928.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="108.0" text="Item Code" />
+          <TableColumn fx:id="colItemName" prefWidth="153.0" text="Name" />
+            <TableColumn fx:id="colItemDes" prefWidth="145.0" text="Description" />
+            <TableColumn fx:id="colItemExp" prefWidth="141.0" text="Expiry Date" />
+            <TableColumn fx:id="colItemQOH" prefWidth="123.0" text="Qty On Hand" />
+            <TableColumn fx:id="colItemUP" prefWidth="145.0" text="Unit Price" />
+            <TableColumn fx:id="colItemOption" prefWidth="111.0" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="102.0" prefWidth="963.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="73.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/f68a249080a943372e6a234a51c8596a.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="101.0" layoutY="6.0" prefHeight="48.0" prefWidth="384.0" text="CEYLON FITNESS">
+               <font>
+                  <Font name="Jokerman" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="51.0" prefHeight="32.0" prefWidth="252.0" text="SUPPLEMENT STORE">
+               <font>
+                  <Font name="Impact" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="686.0" layoutY="114.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="733.0" layoutY="114.0" text="2022/03/07">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="838.0" layoutY="114.0" text="Time :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="887.0" layoutY="114.0" text="10:20:33">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fpContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontPageFormController">
+   <children>
+      <ImageView fitHeight="815.0" fitWidth="1213.0" layoutX="-8.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Capture.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="262.0" prefHeight="76.0" prefWidth="477.0" text="CEYLON FITNESS" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="355.0" text="SUPPLEMENT STORE" textFill="#d3d3d3">
+         <font>
+            <Font name="Impact" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="118.0" fitWidth="123.0" layoutX="204.0" layoutY="122.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/f68a249080a943372e6a234a51c8596a.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="1057.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/imgbin-computer-icons-telephone-symbol-trilobite-s-CBsGA6xTxL3Rb9hJ0ytBCPdLz.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1083.0" layoutY="14.0" text="+94 912224159" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1079.0" layoutY="779.0" text="System Version 1.0.0" textFill="WHITE">
+         <font>
+            <Font name="Webdings" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="91.0" layoutY="683.0" onAction="#loginOnAction" prefHeight="39.0" prefWidth="227.0" style="-fx-border-color: white;" text="Click Here To Login" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
